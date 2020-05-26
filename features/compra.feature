@@ -23,8 +23,15 @@ Cenário: Alteração de quantidade de item no carrinho
     Quando seleciono novo produto
     Então altero a quantidade do produto selecionado
 
-@wip
-Cenário: remoção do item do carrinho
+Cenário: Remoção do item do carrinho
     Dado estou no carrinho
     Quando removo um item do carrinho
     Então tenho o carrinho atualizado
+
+@wip
+#não foi possivel finalizar o cenario devido o site se encontrar com erro.
+Cenário: Finalziação de compra
+    Dado que seleciono o produto desejado
+    E insiro no carrinho
+    Quando preencho os dados para finalização da compra
+    Então finalizo a compra com sucesso

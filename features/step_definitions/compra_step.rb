@@ -63,3 +63,38 @@ end
 Então("tenho o carrinho atualizado") do
   find(:xpath, '/html/body/section/div[1]/div[1]/h1').set("Meu carrinho")
 end
+
+Dado("que seleciono o produto desejado") do
+  step("que estou na página da Vivo")
+  find(:id, 'searchHeader').send_keys("fone de ouvido")
+  find(:xpath, '/html/body/header/nav[2]/div/div/div/div[2]/div/form/div/button').click
+end
+
+Dado("insiro no carrinho") do
+  step("seleciono novo produto")
+end
+
+Quando("preencho os dados para finalização da compra") do
+  find(:id, 'BtnContinueChecout').click
+  find(:id, 'j_username').set(78325740035)
+  find(:id, 'continue').click
+  find(:id, 'fullname').set('Pedro Barbosa')
+  find(:id, 'rg').set('0914537667')
+  find(:id, 'issuingbody').set('SSP')
+  find(:xpath, '//*[@id="registrationform"]/div[1]/div[2]/div[3]/div[3]/div/div[1]/dd/div/button').click
+  find(:xpath, '//*[@id="registrationform"]/div[1]/div[2]/div[3]/div[3]/div/div[1]/dd/div/div/ul/li[27]/a').click
+  find(:id, 'dob').set('01011980')
+  find(:id, 'sex2').click
+  find(:id, 'mothersname').set('Julia Barbosa')
+  find(:id, 'contactphone').set('11964615351')
+  find(:id, 'email').set('eu@eu.com.br')
+  find(:id, 'password').set('135790')
+  find(:id, 'confirmpassword').set('135790')
+  find(:id, 'mobile').set('06608430')
+  find(:id, 'paragraph').set('20')
+  find(:id, 'submitFormCheckoutBtn').click
+end
+
+Então("finalizo a compra com sucesso") do
+  pending # Write code here that turns the phrase above into concrete actions
+end
