@@ -15,16 +15,20 @@ O Teste: Automatizar um fluxo de um e-commerce qualquer
 ### Pontos importantes:
 
 • Os cenários devem ser estruturados utilizando Dado-Quando-Então;
+
 • Utilizar somente dados fictícios (cpf, nome, cartão, etc);
+
 • Informações como URL, usuário e senha devem ser parametrizados de alguma forma;
+
 • Deve haver um README com todas instruções de como rodar os testes através da
 ferramenta escolhida;
-• O framework a ser utilizado fica a critério do candidato;
+
+• O framework a ser utilizado fica a critério do candidato (utilizado Capybara + Cucumber);
+
 • Versionar o código em um repositório git de forma pública, mantendo todos os
 históricos de commits desde o início do projeto até a conclusão do projeto;
-• O prazo de entrega do projeto é de 1 semana após o recebimento do teste;
 
-Obs.: Teste realizado em Capybara + Cucumber
+• O prazo de entrega do projeto é de 1 semana após o recebimento do teste;
 
 ## Para executar o teste:
 
