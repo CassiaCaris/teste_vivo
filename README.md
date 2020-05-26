@@ -1,4 +1,4 @@
-*# Teste proposta pela Vivo
+# Teste proposta pela Vivo
 
 ## proposta do teste:
 
