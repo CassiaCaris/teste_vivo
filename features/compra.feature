@@ -7,7 +7,24 @@ Funcionalidade: Compra de produto on-line
 # 4. Remoção de item do carrinho;
 # 5. Ir para a tela de checkout e preencher os dados necessários para concluir a compra;
 
-Cenário: Acessar a página da Vivo
+Cenário: Realizar busca de itens
     Dado que estou na página da Vivo
     Quando procuro o produto que desejo adquirir
     Então seleciono o produto 
+
+Cenário: Inserção do item no carrinho
+    Dado que estou com o produto selecionado
+    Quando insero no carrinho
+    Então consulto o produto no carrinho
+
+Cenário: Alteração de quantidade de item no carrinho
+    Dado estou no carrinho
+    E volto paa continuar comprando
+    Quando seleciono novo produto
+    Então altero a quantidade do produto selecionado
+
+@wip
+Cenário: remoção do item do carrinho
+    Dado estou no carrinho
+    Quando removo um item do carrinho
+    Então tenho o carrinho atualizado
